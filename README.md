@@ -14,6 +14,7 @@ learning Structured Programming.
 - Structures
 - Factorials
 - Binomial coefficients
+- Strings
 - Basic problem solving
 
 ## Language
