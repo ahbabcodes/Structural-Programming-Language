@@ -1,18 +1,21 @@
 #include<stdio.h>
-int main()
-{
-    int i=0;
-    printf("Numbers from 1 to 10 are:\n");
-    while(i<10)
-    {
-        i++;
-        printf("%d\n",i);
+int main(){
+    int n, sum = 0;
+    printf("Enter positive integers (0 or negative to stop):\n");
+    while (1) {
+        scanf("%d", &n);
+        if (n <= 0) {
+            break;
+        }
+        sum += n;
     }
-    printf("Numbers from 10 to 1 are:\n");
-    while(i>0)
-    {
-        printf("%d\n",i);
-        i--;
-    }
+    printf("Sum of positive integers: %d\n", sum);
     return 0;
 }
+
+
+
+
+
+
+
