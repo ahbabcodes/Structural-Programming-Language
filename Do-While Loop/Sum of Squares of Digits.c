@@ -7,7 +7,6 @@ int main(){
     scanf("%d",&num);
     if(num<=0){
         printf("Please enter a positive integer.\n");
-        return 1;
     }
     do{
         digit=num%10;
