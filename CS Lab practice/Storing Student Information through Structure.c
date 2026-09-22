@@ -35,6 +35,4 @@ int main(){
     }
     if(!found) printf("Student not found.\n"); 
     return 0; 
-}
-        
-    
+}  
