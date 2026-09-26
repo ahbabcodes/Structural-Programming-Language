@@ -4,7 +4,10 @@ int AreaofRectangle(int l, int w){
     return area;
 }
 int main(){
-    int r=AreaofRectangle(5,10);
+    int l,w;
+    printf("Enter length and width of rectangle: ");
+    scanf("%d %d",&l,&w);
+    int r=AreaofRectangle(l,w);
     printf("%d",r);
     return 0;
 }
