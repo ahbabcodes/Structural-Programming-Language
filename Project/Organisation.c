@@ -11,9 +11,15 @@ struct org{ //organisation
     char name[50], address[100], type[20], email[50], phone[15], website[50];
     int founded, count, start;
 };
-int input(char *label, char *s, int size){
-    printf("%s: ", label);
-    fgets(s, size, stdin);
-    s[strcspn(s, "\n")] = 0; // Removes newline character
+int printEmp(struct emp e){
+    printf("\nEmployee ID: %d", e.id);
+    printf("\nName: %s", e.name);
+    printf("\nDepartment: %s", e.dept);
+    printf("\nPosition: %s", e.post);
+    printf("\nEmail: %s", e.email);
+    printf("\nPhone: %s", e.phone);
+    printf("\nSalary: %.2f", e.salary);
+    printf("\nAge: %d", e.age);
+    printf("\nDate of Joining: %02d/%02d/%04d\n", e.day, e.month, e.year);
     return 0;
 }
