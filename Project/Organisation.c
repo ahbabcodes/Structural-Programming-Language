@@ -11,7 +11,7 @@ struct org{ //organisation
     char name[50], address[100], type[20], email[50], phone[15], website[50];
     int founded, count, start;
 };
-int printEmp(struct emp e){
+int printEmp(struct emp e){ //emp info
     printf("\nEmployee ID: %d", e.id);
     printf("\nName: %s", e.name);
     printf("\nDepartment: %s", e.dept);
