@@ -1,21 +1,19 @@
-/*Target: Details of Organisations which includes their names, addresses, and contact information such as e-mail, phone, website. Also the information about the employees working in the organisation, including their names, positions, and contact details such as e-mail and phone numbers. 
-Way to implement: Structures, loops, array, functions etc.*/
 #include<stdio.h>
 #include<string.h>
-struct emp{ //employee
+struct emp{ 
     char name[50], dept[50], post[50], email[50], phone[20];
     float salary;
     int age, id, day, month, year;
 };
-struct org{ //organisation
+struct org{ 
     char name[50], address[100], type[50], email[50], phone[20], website[50];
     int founded, count, start;
 };
-void flushInput(){ //throw away everything typed until Enter
+void flushInput(){ 
     int c;
     while((c = getchar()) != '\n' && c != EOF);
 }
-void printEmp(struct emp e){ //emp info
+void printEmp(struct emp e){ 
     printf("\nEmployee ID: %d", e.id);
     printf("\nName: %s", e.name);
     printf("\nDepartment: %s", e.dept);
@@ -31,14 +29,14 @@ int main(){
     do{
         printf("Enter the number of organisations: ");
         scanf("%d", &n);
-        flushInput(); //clear leftover newline so fgets doesn't skip
+        flushInput(); 
     }while(n<1);
     struct org o[n];
     for(int i=0; i<n; i++){
         printf("\nEnter details for Organisation %d:\n", i+1);
         printf("Name: ");
         fgets(o[i].name, sizeof(o[i].name), stdin);
-        o[i].name[strcspn(o[i].name, "\n")] = 0; // Remove newline character
+        o[i].name[strcspn(o[i].name, "\n")] = 0;
         printf("Address: ");
         fgets(o[i].address, sizeof(o[i].address), stdin);
         o[i].address[strcspn(o[i].address, "\n")] = 0;
@@ -110,7 +108,7 @@ int main(){
                 scanf("%f", &t.salary);
                 flushInput();
             }while(t.salary<0);
-            e[idx] = t;   //store the finished employee
+            e[idx] = t;  
         }
     }
     int choice;
