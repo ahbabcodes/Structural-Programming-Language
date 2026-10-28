@@ -2,7 +2,7 @@
 
 A collection of **C programming exercises, practice problems, and lab work** completed while learning the fundamentals of structured programming.
 
-This repository documents my progress from basic C syntax to functions, loops, recursion, strings, and structures.
+This repository documents my progress from basic C syntax to functions, loops, recursion, strings, arrays, pointers, structures, and a small multi-struct project.
 
 ## 📚 Contents
 
@@ -17,6 +17,8 @@ The repository is organized by topic and source.
 - Nested loops
 - Functions
 - Recursion
+- Arrays (1D and 2D) and matrix operations
+- Pointers
 - Strings
 - Structures
 - Basic problem solving
@@ -31,8 +33,12 @@ The repository is organized by topic and source.
 | **For Loop** | Exercises using `for` loops |
 | **While Loop** | Exercises using `while` loops |
 | **Do-While Loop** | Exercises using `do-while` loops |
-| **CS Lab practice** | University lab exercises and practice programs |
-| **w3schools** | C exercises and examples based on W3Schools' learning material |
+| **Function** | Programs that use user-defined functions |
+| **Array** | 2D arrays and matrix multiplication |
+| **Pointer** | Pointer-based programs (array traversal with pointers) |
+| **CS Lab practice** | University lab exercises and practice programs — [see its README](CS%20Lab%20practice/README.md) |
+| **Project** | `Organisation.c` — a menu-driven program managing organisations and their employees — [see its README](Project/README.md) |
+| **w3schools** | C exercises and examples based on W3Schools' learning material — [see its README](w3schools/README.md) |
 
 ## 🛠️ Language
 
